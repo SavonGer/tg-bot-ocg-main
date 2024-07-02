@@ -8,7 +8,7 @@ from aiogram.filters import Filter
 from aiogram.filters import CommandStart
 from aiogram.types import Message, LinkPreviewOptions, FSInputFile, KeyboardButton, ReplyKeyboardMarkup
 
-TOKEN = "past your token here"
+TOKEN = "6768737174:AAFIVNAzdlY-z5CY91uysjTr4fLhQuLpOyE"
 
 # All handlers should be attached to the Router (or Dispatcher)
 
@@ -57,8 +57,8 @@ async def echo_handler(message: Message) -> None:
 @dp.message(MyFilter("/contacts"))
 @dp.message(MyFilter("Контакты ✉"))
 async def echo_handler(message: Message) -> None:
-    cap = "Над ботом работал Цветков Алексей Д. Б9123-09.03.04 7 подгруппа 😉\n" \
-          "Связаться со мной: tcvetkov.ad@students.dvfu.ru"
+    cap = "Над ботом работал Герман Савелий Б5123-58.03.01 😉\n" \
+          "Связаться со мной: german.sv@students.dvfu.ru"
     await message.answer_photo(photo=FSInputFile("img/contacts.jpg"), caption=cap, reply_markup=keyboard)
 
 
